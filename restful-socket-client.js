@@ -3,15 +3,11 @@ function RestfulSocketClient(address, opts) {
   opts.path = opts.path || '/restful-socket';
 
   this.socket = io.connect(address, opts);
-  this.ons = {};
 }
 
 RestfulSocketClient.prototype.proc = function (method, path, data, callback) {
   this.socket.emit(method, {path: path, data: data});
-  if (!this.ons[method + '-' + path]) {
-    this.socket.on(method + '-' + path, callback);
-    this.ons[method + '-' + path] = 1;
-  }
+  this.socket.once(method + '-' + path, callback);
 };
 
 RestfulSocketClient.prototype.get = function (path, data, callback) {
