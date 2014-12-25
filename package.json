@@ -1,0 +1,19 @@
+{
+  "name": "restful-socket-client",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gpleo/restful-socket.git"
+  },
+  "keywords": [
+    "restful",
+    "websocket",
+    "client"
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "author": "Leo",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
