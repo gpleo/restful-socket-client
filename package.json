@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git://github.com/gpleo/restful-socket.git"
+    "url": "https://github.com/gpleo/restful-socket-client.git"
   },
   "keywords": [
     "restful",
@@ -15,5 +15,13 @@
   },
   "author": "Leo",
   "license": "MIT",
-  "readmeFilename": "README.md"
+  "description": "用于配合restful-socket的Node.js服务端使用WebSocket模仿请求/响应模式。",
+  "bugs": {
+    "url": "https://github.com/gpleo/restful-socket-client/issues"
+  },
+  "homepage": "https://github.com/gpleo/restful-socket-client",
+  "main": "restful-socket-client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
