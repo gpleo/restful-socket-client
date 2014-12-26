@@ -1,6 +1,6 @@
 {
   "name": "restful-socket-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/gpleo/restful-socket-client.git"
